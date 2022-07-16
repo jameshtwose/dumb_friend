@@ -1,0 +1,5 @@
+spacy
+chatterbot
+chatterbot-corpus
+fastapi
+uvicorn
