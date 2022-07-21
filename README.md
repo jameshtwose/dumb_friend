@@ -6,7 +6,7 @@ A very stupid chatbot for you to talk to.
 <img src="dumbfriend_convo.gif" width="850" height="500" />
 
 # To run the chatbot, do the following:
-- Clone the repository and navigate to the root of the repository ("dumb_friend):
+- Clone the repository and navigate to the root of the repository ("dumb_friend"):
     - `git clone git@github.com:jameshtwose/dumb_friend.git`
     - `cd dumb_friend`
 - Create a python environment (I usually use conda):
