@@ -1,5 +1,4 @@
-spacy
-chatterbot
-chatterbot-corpus
-fastapi
+flask
+transformers
+torch
 uvicorn

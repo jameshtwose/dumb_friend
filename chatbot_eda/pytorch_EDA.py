@@ -3,8 +3,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 #%%
-tokenizer = AutoTokenizer.from_pretrained("ThatSkyFox/DialoGPT-small-joshua")
-model = AutoModelForCausalLM.from_pretrained("ThatSkyFox/DialoGPT-small-joshua")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-small")
 
 #%%
 # Let's chat for 5 lines
@@ -22,4 +22,3 @@ for step in range(5):
     print("DialoGPT: {}".format(tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)))
 
 
-# %%
