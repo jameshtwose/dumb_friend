@@ -4,9 +4,11 @@ import torch
 
 app = Flask(__name__)
 
-
-tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
-model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
+model_name = "microsoft/DialoGPT-small"
+# model_name = "microsoft/deberta-v3-xsmall"
+# model_name = "facebook/blenderbot_small-90M"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
 
 
 @app.route("/")
